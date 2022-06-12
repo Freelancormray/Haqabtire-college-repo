@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-------- css stylesheet links / Js ------->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+    <script defer src="js/script.js"></script>
+
+    <!-------- adding favicon ------->
+    <link rel="icon" href="img/fivicon.ico" />
+
+    <!-------- roboto font link ------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-------- rubik font link ------->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-------- ion icons pack ------->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <title>haqabtire college | landing page</title>
+  </head>
+
+  <body>
+    <section class="hero-section">
+      <!-------- MAIN-NAVIGATION ------->
+      <div class="container">
+        <header class="header">
+          <a href="#" class="logo-box">
+            <img class="logo" src="img/HOC.png" alt="logo" />
+            <h1 class="logo-text logo-text-1">
+              Haqabtire
+              <span class="logo-text logo-text-2">College</span>
+            </h1>
+          </a>
+
+          <div class="main-nav">
+            <ul class="main-nav-list">
+              <li><a class="navigation" href="#home">Home</a></li>
+              <li><a class="navigation" href="#about">About</a></li>
+              <li>
+                <a class="navigation" href="#courses">Courses</a>
+              </li>
+              <li>
+                <a class="navigation" href="#testimonials">
+                  Testimonials
+                </a>
+              </li>
+              <li>
+                <a class="navigation" href="#contact" contact>Contact</a>
+              </li>
+              <li>
+                <a href="#contact" class="navigation navigation-btn">
+                  Sign up
+                  <ion-icon class="btn-icon" name="log-out-outline"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+          </button>
+        </header>
+        <!-------- HERO -------->
+        <div class="hero grid--2-cols">
+          <div class="hero-text-box">
+            <h1 class="primary-heading">
+              Best online learning the easier way in your language.
+            </h1>
+            <p class="hero-description">
+              Discover thausands of online courses from top universities around
+              the world. Anywhere, anytime. Enjoy risk-free with our 30-day,
+              money-back guarantee.
+            </p>
+            <div class="buttons">
+              <a href="#courses" class="btn btn-primary" id="courses">
+                Explore Courses
+              </a>
+              <a href="" class="btn btn-outline" id="how">
+                Lean More
+                <ion-icon
+                  class="btn-icon"
+                  name="chevron-down-outline"
+                ></ion-icon>
+              </a>
+            </div>
+          </div>
+          <!-- hero-image -->
+          <!-- <div class="hero__img-box"> -->
+          <img
+            class="hero-img"
+            src="img/undraw_Reading_time_re_phf7.png"
+            alt="girl-reading"
+          />
+          <!-- </div> -->
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <!-------- ABOUT SECTION -------->
+      <div class="container">
+        <section class="about-section" id="about">
+          <div class="about grid--2-cols">
+            <div class="about__text-box">
+              <div class="headings">
+                <h2 class="secondary-heading">About us</h2>
+                <h3 class="tertiary-heading">
+                  The world’s largest selection of online courses
+                </h3>
+              </div>
+              <p class="about-description">
+                Our school
+                <span>Haqabtire Online College</span>
+                is known for the high-quality education programs. We work with
+                the best teachers who know how to engage students in the
+                learning activities!
+              </p>
+
+              <div class="feautures">
+                <p class="feautures-item">
+                  <ion-icon class="feauture-icon" name="shield-half"></ion-icon>
+                  Private Classes
+                </p>
+                <p class="feautures-item">
+                  <ion-icon class="feauture-icon" name="infinite"></ion-icon>
+                  Life Time Access
+                </p>
+                <p class="feautures-item">
+                  <ion-icon class="feauture-icon" name="help"></ion-icon>
+                  Teacher Support
+                </p>
+                <p class="feautures-item">
+                  <ion-icon class="feauture-icon" name="school"></ion-icon>
+                  Certificate Accomplition
+                </p>
+              </div>
+            </div>
+
+            <div class="about-img-box">
+              <img
+                class="about-img"
+                src="img/freelancer.jpg"
+                alt="freelancer-man"
+              />
+            </div>
+          </div>
+        </section>
+        <!-------- HOW IT WORKS  -------->
+        <section class="how-it-works" id="how">
+          <div class="headings center-text">
+            <h2 class="secondary-heading">How It Works</h2>
+            <h3 class="tertiary-heading">
+              Take three simple steps and start learning
+            </h3>
+          </div>
+          <div class="step-box">
+            <div class="step grid--3-cols">
+              <figure class="step-item step-item-1">
+                <img class="step-img" src="./img/Step one 1.png" alt="step" />
+                <p class="step-heading">Sign up</p>
+                <p class="step-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus.
+                </p>
+              </figure>
+              <figure class="step-item">
+                <img class="step-img" src="./img/step two 2.png" alt="step" />
+                <p class="step-heading">Choose Course</p>
+                <p class="step-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus.
+                </p>
+              </figure>
+              <figure class="step-item">
+                <img class="step-img" src="./img/Step three 3.png" alt="step" />
+                <p class="step-heading">Start learning</p>
+                <p class="step-description">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Necessitatibus.
+                </p>
+              </figure>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-------- COURSES SECTION  -------->
+      <section class="section-courses" id="courses">
+        <div class="container">
+          <div class="headings">
+            <h2 class="secondary-heading">top Courses</h2>
+            <h3 class="tertiary-heading">Bick up the course you want easily</h3>
+          </div>
+
+          <div class="courses grid--4-cols">
+            <!-- course-one -->
+            <div class="card">
+              <div class="card-img-box">
+                <img class="card-img" src="./img/course-thumbnail-1.jpg" />
+              </div>
+              <div class="card-details">
+                <p class="card-header">
+                  <span>
+                    <ion-icon class="card-icon" name="book"></ion-icon>
+                    15 Lessons
+                  </span>
+                  <span>
+                    <ion-icon class="card-icon" name="people"></ion-icon>
+                    689
+                  </span>
+                </p>
+                <figure class="lacturar-box">
+                  <img
+                    class="lacturar-profile"
+                    src="./img/97.jpg"
+                    alt="course-lacturar"
+                  />
+                  <p class="teacher-name">Jonas Schedman</p>
+                </figure>
+                <div class="card-description">
+                  <h4 class="course-title">
+                    HTML and CSS advanced from zero to hero.
+                  </h4>
+                  <p class="course-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    emit.
+                  </p>
+                </div>
+              </div>
+              <div class="card-bottom">
+                <p class="course-price">$ 13.99</p>
+                <p class="course-rating">
+                  <ion-icon
+                    class="card-icon card-icon-primary"
+                    name="star-outline"
+                  ></ion-icon>
+                  <span class=" ">4.7 (232)</span>
+                </p>
+              </div>
+            </div>
+            <!-- course-two -->
+            <div class="card">
+              <div class="card-img-box">
+                <img class="card-img" src="./img/course-thumbnail-2.jpg" />
+              </div>
+              <div class="card-details">
+                <p class="card-header">
+                  <span>
+                    <ion-icon class="card-icon" name="book"></ion-icon>
+                    15 Lessons
+                  </span>
+                  <span>
+                    <ion-icon class="card-icon" name="people"></ion-icon>
+                    689
+                  </span>
+                </p>
+                <figure class="lacturar-box">
+                  <img
+                    class="lacturar-profile"
+                    src="./img/97.jpg"
+                    alt="course-lacturar"
+                  />
+                  <p class="teacher-name">Jonas Schedman</p>
+                </figure>
+                <div class="card-description">
+                  <h4 class="course-title">
+                    HTML and CSS advanced from zero to hero.
+                  </h4>
+                  <p class="course-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    emit.
+                  </p>
+                </div>
+              </div>
+              <div class="card-bottom">
+                <p class="course-price">$ 13.99</p>
+                <p class="course-rating">
+                  <ion-icon
+                    class="card-icon card-icon-primary"
+                    name="star-outline"
+                  ></ion-icon>
+                  <span class=" ">4.7 (232)</span>
+                </p>
+              </div>
+            </div>
+            <!-- course-three -->
+            <div class="card">
+              <div class="card-img-box">
+                <img class="card-img" src="./img/course-thumbnail-3.jpg" />
+              </div>
+              <div class="card-details">
+                <p class="card-header">
+                  <span>
+                    <ion-icon class="card-icon" name="book"></ion-icon>
+                    15 Lessons
+                  </span>
+                  <span>
+                    <ion-icon class="card-icon" name="people"></ion-icon>
+                    689
+                  </span>
+                </p>
+                <figure class="lacturar-box">
+                  <img
+                    class="lacturar-profile"
+                    src="./img/97.jpg"
+                    alt="course-lacturar"
+                  />
+                  <p class="teacher-name">Jonas Schedman</p>
+                </figure>
+                <div class="card-description">
+                  <h4 class="course-title">
+                    HTML and CSS advanced from zero to hero.
+                  </h4>
+                  <p class="course-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    emit.
+                  </p>
+                </div>
+              </div>
+              <div class="card-bottom">
+                <p class="course-price">$ 13.99</p>
+                <p class="course-rating">
+                  <ion-icon
+                    class="card-icon card-icon-primary"
+                    name="star-outline"
+                  ></ion-icon>
+                  <span class=" ">4.7 (232)</span>
+                </p>
+              </div>
+            </div>
+            <!-- course-four -->
+            <div class="card">
+              <div class="card-img-box">
+                <img
+                  class="card-img"
+                  src="./img/course-thumbnail-4.jpg"
+                  alt="course-thumbnail"
+                />
+              </div>
+              <div class="card-details">
+                <p class="card-header">
+                  <span>
+                    <ion-icon class="card-icon" name="book"></ion-icon>
+                    15 Lessons
+                  </span>
+                  <span>
+                    <ion-icon class="card-icon" name="people"></ion-icon>
+                    689
+                  </span>
+                </p>
+                <figure class="lacturar-box">
+                  <img
+                    class="lacturar-profile"
+                    src="./img/97.jpg"
+                    alt="course-lacturar"
+                  />
+                  <p class="teacher-name">Jonas Schedman</p>
+                </figure>
+                <div class="card-description">
+                  <h4 class="course-title">
+                    HTML and CSS advanced from zero to hero.
+                  </h4>
+                  <p class="course-description">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit
+                    emit.
+                  </p>
+                </div>
+              </div>
+              <div class="card-bottom">
+                <p class="course-price">$ 13.99</p>
+                <p class="course-rating">
+                  <ion-icon
+                    class="card-icon card-icon-primary"
+                    name="star-outline"
+                  ></ion-icon>
+                  <span class=" ">4.7 (232)</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="dots">
+            <span class="dot-item dot-item-active"></span>
+            <span class="dot-item"></span>
+            <span class="dot-item"></span>
+            <span class="dot-item"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-------- TESTIMONIAL SECTION  -------->
+      <section class="testimonial-section" id="testimonials">
+        <div class="container">
+          <div class="grid--2-cols testimonial-top">
+            <div class="headings">
+              <h2 class="secondary-heading">testimonials</h2>
+              <h3 class="tertiary-heading">
+                What people says our college
+              </h3>
+            </div>
+
+            <div class="next">
+              <ion-icon class="feauture-icon" name="arrow-back"></ion-icon>
+              <ion-icon class="feauture-icon" name="arrow-forward"></ion-icon>
+            </div>
+          </div>
+          <div class="testimonial grid--2-cols">
+            <!-- testimonail-box-1 -->
+            <div class="testimonial-box">
+              <div class="testimonial-header">
+                <img
+                  src="./img/testimonial-img-2.jpg"
+                  alt="customer-profile"
+                  class="testimonial-img"
+                />
+                <div class="testimonail-icons">
+                  <ion-icon class="testimonial-icon" name="star"></ion-icon>
+                  <ion-icon class="testimonial-icon" name="star"></ion-icon>
+                  <ion-icon class="testimonial-icon" name="star"></ion-icon>
+                  <ion-icon class="testimonial-icon" name="star"></ion-icon>
+                  <ion-icon class="testimonial-icon" name="star"></ion-icon>
+                </div>
+                <img
+                  src="./img/testimonial-sign.png"
+                  alt=""
+                  class="testimonial-sign"
+                />
+              </div>
+
+              <div class="testimonial-text">
+                <p>
+                  This is a life saver. I don’t have time or money for a college
+                  education. My goal is to become a freelance web developer and
+                  thanks to these courses, I’m really close.
+                </p>
+                <h4 class="customer-name">Hamse Mohamed</h4>
+                <p class="customer-profession">Full-Stack Developer</p>
+              </div>
+            </div>
+            <!-- testimonial-box-2 -->
+            <div class="testimonial-box">
+              <div class="testimonial-header">
+                <img
+                  src="./img/testimonial-img-1.jpg"
+                  alt="customer-profile"
+                  class="testimonial-img"
+                />
+                <div class="testimonail-icons">
+                  <ion-icon class="testimonial-icon" name="star"></ion-icon>
+                  <ion-icon class="testimonial-icon" name="star"></ion-icon>
+                  <ion-icon class="testimonial-icon" name="star"></ion-icon>
+                  <ion-icon class="testimonial-icon" name="star"></ion-icon>
+                  <ion-icon
+                    class="testimonial-icon"
+                    name="star-half-outline"
+                  ></ion-icon>
+                </div>
+                <img
+                  src="./img/testimonial-sign.png"
+                  alt=""
+                  class="testimonial-sign"
+                />
+              </div>
+
+              <div class="testimonial-text">
+                <p>
+                  It is no exaggeration to say this Haqabtire College experience
+                  was transformative-both professionally and personally. This
+                  workshop will long remain a high point of my life.
+                </p>
+                <h4 class="customer-name">Samiya Mouse</h4>
+                <p class="customer-profession">Accounting</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-------- CTA SECTION  -------->
+      <section class="cta-section" id="contact">
+        <div class="container">
+          <div class="cta grid--2-cols">
+            <div class="cta-text-box">
+              <p class="cta-heading">
+                Access
+                <span class="cta-heading-number">250+</span>
+                online tutorials
+                <br />
+                from top instructor.
+                <span class="cta-register">REGISTER NOW</span>
+              </p>
+              <div class="cta-circles">
+                <div class="circle-item">
+                  <p class="circle-content">
+                    00
+                    <span>Days</span>
+                    <span class="circle-line"></span>
+                  </p>
+                </div>
+                <div class="circle-item">
+                  <p class="circle-content">
+                    00
+                    <span>Hours</span>
+                    <span class="circle-line"></span>
+                  </p>
+                </div>
+                <div class="circle-item">
+                  <p class="circle-content">
+                    00
+                    <span>Minutes</span>
+                    <span class="circle-line"></span>
+                  </p>
+                </div>
+                <div class="circle-item">
+                  <p class="circle-content">
+                    00
+                    <span>Seconds</span>
+                    <span class="circle-line circle-line-active"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- CTA FORM -->
+            <div class="form">
+              <p class="form-heading">
+                Create your free account now and get immediate access to 100s of
+                online courses.
+              </p>
+              <div class="form-body">
+                <div class="form-input">
+                  <label for="name">Full Name</label>
+                  <input
+                    class="input-field"
+                    type="text"
+                    placeholder="Awil Nour"
+                    required
+                  />
+                </div>
+                <div class="form-input">
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="me@example.com"
+                    required
+                  />
+                </div>
+                <div class="form-input">
+                  <label for="phone">Phone No</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Phone Number"
+                    required
+                  />
+                </div>
+              </div>
+              <a href="#" class="btn form-btn">Sign up</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-------- NEWSLETTER SECTION  -------->
+      <div class="container">
+        <section class="newsletter-section">
+          <div class="newsletter">
+            <div class="newsletter-text-box">
+              <div class="headings">
+                <h2 class="secondary-heading secondary-heading-white">
+                  newsletter
+                </h2>
+                <h3 class="tertiary-heading tertiary-heading-white">
+                  Subscribe to our newsletter
+                  <span>Get updates news and events</span>
+                </h3>
+              </div>
+            </div>
+            <div class="newsletter-inbut-box">
+              <input
+                class="newsletter-email"
+                type="email"
+                placeholder="Enter your email"
+              />
+              <a href="#" class="newsletter-btn">Subscribe</a>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-------- FOOTER SECTION  -------->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer">
+          <div class="logo-col">
+            <a href="#" class="logo-box">
+              <!-- <img class="logo-footer" src="img/HOC.png" alt="logo" /> -->
+              <h1 class="logo-text logo-text-1">
+                Haqabtire
+                <span class="logo-text logo-text-2">College</span>
+              </h1>
+            </a>
+            <p class="footer-description">
+              We aggregate courses from many universities to help you find the
+              best courses on almost any subject.
+            </p>
+            <div class="social-icons">
+              <a href="#">
+                <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon class="social-icon" name="logo-whatsapp"></ion-icon>
+              </a>
+              <a href="#">
+                <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+              </a>
+            </div>
+          </div>
+
+          <div class="address-col">
+            <p class="footer-heading">Contact us</p>
+            <address class="contacts">
+              <p class="address">
+                623 New Hargeisa St., 2nd Floor, baar waraabe, CA 94107
+              </p>
+              <p>
+                <a class="footer-link" href="tel:415-201-6370">415-201-6370</a>
+                <br />
+                <a class="footer-link" href="mailto:hello@omnifood.com">
+                  hello@haqabtire.com
+                </a>
+              </p>
+            </address>
+          </div>
+
+          <nav class="nav-col">
+            <p class="footer-heading">Categories</p>
+            <ul class="footer-nav">
+              <li><a class="footer-link" href="#">Web Development</a></li>
+              <li><a class="footer-link" href="#">Digital Marketing</a></li>
+              <li><a class="footer-link" href="#">Hematology</a></li>
+              <li><a class="footer-link" href="#">Bacteriology</a></li>
+            </ul>
+          </nav>
+
+          <div class="gallery-col">
+            <p class="footer-heading">
+              Gallery
+            </p>
+            <div class="gellery">
+              <figure class="gallery-item">
+                <img
+                  class="gallery-img"
+                  src="./img/gallery-img-1.jpg"
+                  alt="haqabtire-gallery"
+                />
+              </figure>
+              <figure class="gallery-item">
+                <img
+                  class="gallery-img"
+                  src="./img/gallery-img-2.jpg"
+                  alt="haqabtire-gallery"
+                />
+              </figure>
+              <figure class="gallery-item">
+                <img
+                  class="gallery-img"
+                  src="./img/gallery-img-3.jpg"
+                  alt="haqabtire-gallery"
+                />
+              </figure>
+              <figure class="gallery-item">
+                <img
+                  class="gallery-img"
+                  src="./img/gallery-img-4 (2).jpg"
+                  alt="haqabtire-gallery"
+                />
+              </figure>
+              <figure class="gallery-item">
+                <img
+                  class="gallery-img"
+                  src="./img/gallery-img-5.jpg"
+                  alt="haqabtire-gallery"
+                />
+              </figure>
+              <figure class="gallery-item">
+                <img
+                  class="gallery-img"
+                  src="./img/gallery-img-6.jpg"
+                  alt="haqabtire-gallery"
+                />
+              </figure>
+              <figure class="gallery-item">
+                <img
+                  class="gallery-img"
+                  src="./img/gallery-img-7.jpg"
+                  alt="haqabtire-gallery"
+                />
+              </figure>
+              <figure class="gallery-item">
+                <img
+                  class="gallery-img"
+                  src="./img/gallery-img-8.jpg"
+                  alt="haqabtire-gallery"
+                />
+              </figure>
+              <figure class="gallery-item">
+                <img
+                  class="gallery-img"
+                  src="./img/gallery-img-9.jpg"
+                  alt="haqabtire-gallery"
+                />
+              </figure>
+            </div>
+          </div>
+          <p class="copy-right">
+            Copyright © 2022 by HaqabtireCollege, Inc. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

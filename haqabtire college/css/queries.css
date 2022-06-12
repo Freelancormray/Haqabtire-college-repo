@@ -1,0 +1,183 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+/**************************/
+/* BELOW 500px (PHONES) */
+/**************************/
+
+@media (max-width: 32em) {
+  html {
+    /* 8px / 16px  */
+    font-size: 50%;
+  }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+    z-index: 100;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hide navigation */
+    /* Allows NO transitions at all */
+    /* display: none; */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name='close-outline'] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name='menu-outline'] {
+    display: none;
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .primary-heading {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  .hero-text-box {
+    margin: 2.4rem 0;
+  }
+
+  .hero-description {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .tertiary-heading {
+    font-size: 2.6rem;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
+
+  .feautures {
+    row-gap: 2.4rem;
+  }
+
+  .step-box {
+    padding: 8rem 4rem;
+  }
+  .courses {
+    padding: 8rem;
+  }
+
+  .card-img {
+    height: 17rem;
+  }
+
+  .cta-text-box {
+    padding: 0;
+  }
+
+  .cta-circles {
+    display: none;
+  }
+
+  .form {
+    margin: 0 1.8rem 3.2rem 1.8rem;
+  }
+
+  .newsletter-section {
+    margin: 6.4rem 0;
+  }
+  .newsletter {
+    padding: 2.4rem;
+    grid-template-columns: 2fr;
+    gap: 4.4rem;
+  }
+
+  .testimonial-top {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial {
+    padding: 3.2rem 0 6.4rem 0;
+  }
+
+  .testimonial-box {
+    padding: 1.2rem 2rem;
+  }
+
+  .cta-heading {
+    padding-top: 3.4rem;
+  }
+
+  .footer {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 4.6rem 0;
+  }
+
+  .logo-col {
+    grid-column: 1 / 3;
+  }
+
+  .gallery-col {
+    grid-column: 2 / -1;
+  }
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid--3-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .copy-right {
+    font-size: 1.2rem;
+  }
+}
+
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/

@@ -1,0 +1,199 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+- spacing
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 32 / 36 / 44 / 48 / 52 / 62 / 64 / / 74 / 86 / 98
+
+--- 02 COLORS
+
+color-primary: #039900;
+color-primary-light: #5bf958;
+color-primary-dark: #028000;
+
+color-secondary: #557b83;
+color-secondary-light-1: #89aeb6;
+color-secondary-light: #ecf2f3;
+
+ 
+- Greys
+
+ 
+#555
+#777
+ */
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  /* it means the root font-size is 10px this helps to use rem instead of pixels */
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: 'roboto', sans-serif;
+  color: #555;
+  font-weight: 400;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+.primary-heading {
+  font-family: 'rubik', sans-serif;
+  font-size: 4.4rem;
+  text-transform: uppercase;
+  line-height: 1.1;
+  font-weight: 700;
+  /* margin-bottom: 3.2rem; */
+  animation: moveInRight 0.6s ease-out;
+  backface-visibility: hidden;
+  animation: moveInRight 0.6s ease-out;
+}
+
+.headings {
+  font-family: 'rubik', sans-serif;
+}
+
+.secondary-heading {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #039900;
+  letter-spacing: 0.8px;
+  margin-bottom: 2rem;
+  font-weight: 500;
+}
+
+.tertiary-heading {
+  color: #555;
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/*********** BUTTONS ***********/
+.buttons {
+  display: flex;
+  gap: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1.4rem 2.2rem;
+  border-radius: 100px;
+
+  animation: moveInTop 0.8s ease-in;
+  transition: 0.3s all;
+}
+
+.btn-primary {
+  background-color: #039900;
+  box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.3);
+  /* border: 3px solid #557b83; */
+}
+
+.btn-primary:hover {
+  background: #028000;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-weight: 600;
+  box-shadow: 0 0.6rem 1.5rem rgba(0, 0, 0, 0.3);
+  color: #557b83;
+}
+
+.btn-outline:hover {
+  box-shadow: 0 0.3rem 1rem rgba(0, 0, 0, 0.3), inset 0 0 0 2 rgb(137, 174, 182);
+  transform: translateY(-5px);
+}
+
+.grid--2-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/***************** HELPER CLASSES ***********************/
+.center-text {
+  text-align: center;
+}
+
+/* ***********ANIMATIONS************ */
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes moveInImage {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
